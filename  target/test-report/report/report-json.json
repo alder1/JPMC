@@ -1,0 +1,102 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 27908164826,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUpTest()"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "",
+        "description": "",
+        "id": "as-a-user-of-google-keep-app,-i-want-to-login-to-the-application;",
+        "after": [
+          {
+            "result": {
+              "duration": 108654,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 6055145498,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I navigate to the Landing page",
+            "match": {
+              "location": "loginTest.i_navigate_to_the_Landing_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4358757014,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I enter my \"username\" and \"password\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "username",
+                  "offset": 12
+                },
+                {
+                  "val": "password",
+                  "offset": 27
+                }
+              ],
+              "location": "loginTest.i_enter_my_and(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 329227,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I click on the login button",
+            "match": {
+              "location": "loginTest.i_click_on_the_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 11682989977,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I should login successfully",
+            "match": {
+              "location": "loginTest.i_should_login_successfully()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "As a user of Google Keep app, I want to login to the application",
+    "description": "",
+    "id": "as-a-user-of-google-keep-app,-i-want-to-login-to-the-application",
+    "keyword": "Feature",
+    "uri": "Features/login.feature"
+  }
+]
