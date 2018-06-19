@@ -1,5 +1,6 @@
 package com.CucumberPrac;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -43,6 +44,11 @@ public class loginPage {
     @FindBy(xpath = ".//*[@id='view_container']/form/div[2]/div/div/div/ul[1]/li[1]/div/div[2]/p[3]")
     private WebElement VerifySignOut;
 
+    @FindBy(xpath = "//div[contains(@class='LXRPh')]")
+    private WebElement errorMessage;
+
+
+
 
 
     public void doLogin(String myEmail, String myPassword) throws InterruptedException {
@@ -65,6 +71,17 @@ public class loginPage {
     }
 
     public boolean VerifyLogOut(){
+
         return VerifySignOut.isDisplayed();
     }
+
+    public boolean VerifyerrorMessage(String text){
+        return errorMessage.isDisplayed();
+    }
+
+
+
+
+
+
 }
