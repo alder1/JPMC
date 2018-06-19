@@ -1,0 +1,88 @@
+Page Factory
+
+@FindBy (xpath ="//main[@id='container']/section/div")
+    private List<WebElement> totalRegionsPlaceHolder;
+
+
+  public int ReturnTotalNumberOfOfficesDisplay()
+    {
+        int totalOffice = totalRegionsPlaceHolder.size();
+        System.out.println("Total number of Regions Displayed "+ totalOffice);
+        int allOfficesDisplayed = 0;
+        for(int i = 0; i < totalOffice; i++)
+        {
+            WebElement regionText = totalRegionsPlaceHolder.get(i);
+            String regionText1 = regionText.findElement(By.tagName("h2")).getText();
+            WebElement parentRegion = totalRegionsPlaceHolder.get(i).findElement(By.tagName("ul"));
+            int totalOfficesInRegion = parentRegion.findElements(By.tagName("li")).size();
+            System.out.println(regionText1+" has a total number of "+totalOfficesInRegion+" offices in it region.");
+            allOfficesDisplayed = allOfficesDisplayed + totalOfficesInRegion;
+            totalOffice = totalRegionsPlaceHolder.size();
+        }
+        System.out.println("Total office displayed on page is " + allOfficesDisplayed);
+        return allOfficesDisplayed;
+    }
+
+    public void assertOffices(String test)
+    {
+        driver.findElements(By.xpath(".//*[@id='container']/section"));
+        driver.get(test);
+    }
+
+    public void assertTotalNumberOfOffices(int expectedOfficeDisplayed)
+    {
+        int returnedActualOfficesDisplayed = ReturnTotalNumberOfOfficesDisplay();
+        Assert.assertEquals(returnedActualOfficesDisplayed,expectedOfficeDisplayed, "Expected "+expectedOfficeDisplayed+ "and found "+returnedActualOfficesDisplayed);
+    }
+
+
+
+
+
+
+Test Class
+
+ @Test
+    public void AssertOfficeTest() {
+        AssertOfficesPage asop = new AssertOfficesPage(driver);
+        asop.AboutUs();
+        asop.assertTotalNumberOfOffices(36);
+    }
+}
+
+
+
+
+To Assert that an element is not displayed: I.e. verify that an icon is not displayed on a page until it is clicked:
+
+
+public class QAEngineer {
+	WebDriver driver;
+		
+	@Test
+		public void isQAEDisplayed(){
+		WebDriver driver = new FirefoxDriver();
+		
+		driver.manage().window().maximize();
+		driver.get("http://dokkio.com/");
+	
+		
+     boolean statusofQA=driver.findElement(By.xpath(".//*[@class='panel-layout']/descendant::li[@id='Jobs-2']")).isDisplayed();
+	Assert.assertTrue(statusofQA);
+				
+	if(statusofQA==true){
+		
+	driver.findElement(By.xpath(".//*[@class='panel-layout']/descendant::li[@id='Jobs-2']")).click();
+		
+		
+	}
+	
+	}
+				
+		
+		}
+
+
+consructed xpath for valtech.com:
+
+//span[text()='About']/parent::a/parent::li/following-sibling::li[2]//span[text()='Services']/parent::a/parent::li/preceding-sibling::li[2]//span[text()='About']
