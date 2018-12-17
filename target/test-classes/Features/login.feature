@@ -18,6 +18,6 @@ Feature: As a user of Google Keep app, I want to login to the application
 
     Examples:
       | username              | password    | text    |
-      | mustie16@hotmail.com  | angel2010   | Account |
-      | olu.adesote@yahoo.com | password123 | Account |
-      | mustie16@gmail.com    | angel2010   | Wrong   |
+#      | mustie16@hotmail.com  | angel2010   | Account |
+#      | olu.adesote@yahoo.com | password123 | Account |
+#      | mustie16@gmail.com    | angel2010   | Wrong   |

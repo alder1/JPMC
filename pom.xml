@@ -7,6 +7,7 @@
     <groupId>Cucumber_Practice</groupId>
     <artifactId>Cucumber_Practice</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <packaging>jar</packaging>
 
     <dependencies>
 

@@ -6,6 +6,12 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import java.io.IOException;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.util.Scanner;
+
+
 /**
  * Created by musti on 22/06/2017.
  */
@@ -47,8 +53,8 @@ public class loginPage {
     @FindBy(xpath = "//div[contains(@class='LXRPh')]")
     private WebElement errorMessage;
 
-
-
+    @FindBy(xpath = "//*[@id='headingText']/content")
+    private WebElement copyText;
 
 
     public void doLogin(String myEmail, String myPassword) throws InterruptedException {
@@ -57,6 +63,43 @@ public class loginPage {
         Thread.sleep(2000);
         EnterPWord.sendKeys(myPassword);
         submitPWord.click();
+    }
+
+    public void doLoginDate(){
+
+        Email.sendKeys(CurrentDate.getCurentDate());
+    }
+
+    public void saveTextToFile(){
+
+        // This code will call the FileWriter class and save the retrieved text from 'copyText.getText' method & save the text to file specified.
+        String textToSave =  copyText.getText();
+        FileWriter myFileWriter = new FileWriter("CaseWord");
+        myFileWriter.writeToFile(textToSave);
+        myFileWriter.endFile();
+
+        // This code will retrieve text from the file and pass into the email text field on the web app.
+
+        Path path = Paths.get("src/test/resources/CaseWord");
+        Scanner scanner;
+        try {
+            scanner = new Scanner(path);
+        } catch (IOException e) {
+            throw new RuntimeException("Could not find text file");
+        }
+        String retrieveText = null;
+        int iterationCounter = 0;
+        while (scanner.hasNext()) {
+            iterationCounter++;
+            retrieveText = scanner.next();
+        }
+        scanner.close();
+        if (iterationCounter > 1) {
+            throw new RuntimeException("More than one line was found in CaseWord file");
+        } else if (retrieveText == null) {
+            throw new RuntimeException("Could not retrieve a Text");
+            //Email.sendKeys(retrieveText);
+        }
     }
 
     public boolean verifyLoginPage(){

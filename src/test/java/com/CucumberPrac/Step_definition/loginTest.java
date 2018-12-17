@@ -1,5 +1,6 @@
 package com.CucumberPrac.Step_definition;
 
+import com.CucumberPrac.CurrentDate;
 import com.CucumberPrac.DriverInstance;
 import com.CucumberPrac.Hooks;
 import com.CucumberPrac.loginPage;
@@ -23,7 +24,15 @@ public class loginTest extends DriverInstance{
     @When("^I enter login successfully$")
     public void i_enter_login_successfully() throws Throwable {
 
-        lp.doLogin("olu.adesote@gmail.com", "angel2010");
+        // original login test
+        //lp.doLogin("olu.adesote@gmail.com", "angel2010");
+
+        // Current date test
+         lp.doLoginDate();
+
+        // save text to file test
+            //lp.saveTextToFile();
+
     }
 
     @When("^I click on the login button$")
@@ -32,16 +41,17 @@ public class loginTest extends DriverInstance{
 
     }
 
-    @When("^I enter \"([^\"]*)\" and \"([^\"]*)\"$")
-    public void i_enter_and(String username, String password) throws Throwable {
-        lp.doLogin(username, password);
-    }
+//    @When("^I enter \"([^\"]*)\" and \"([^\"]*)\"$")
+//    public void i_enter_and(String username, String password) throws Throwable {
+//        //lp.doLogin(username, password);
+//        lp.doLoginDate();
+    //}
 
 
     @Then("^I should login successfully$")
     public void i_should_login_successfully() throws Throwable {
 
-        //loginPage lp = new loginPage(driver);
+        Thread.sleep(2000);
         Assert.assertTrue(lp.verifyLoginPage());
     }
 
