@@ -20,20 +20,20 @@ public class verifyNewsPage {
 
     // Web Elements for create a note + add title and delete note.
 
-    @FindBy(xpath = "//*[@id=\"top\"]/div[6]/div/div/div[2]/div[3]/button/span[2]")
+    @FindBy(xpath = "//*[@id='top']/div[6]/div/div/div[2]/div[3]/button/span[2]")
     private WebElement closeCookie;
 
     @FindBy(linkText = "News")
     private WebElement newsButton;
 
-    @FindBy(xpath = "//*[@id=\"brexit\"]/div/header/div/a/h2")
+    @FindBy(xpath = "//*[@id='brexit']/div/header/div/a/h2")
     private WebElement newsHeadline;
 
     @FindBy(xpath = "html/body/div[2]/div[2]/div[2]/div[1]/div[2]/div[2]/div[1]")
     private WebElement DoneBtn;
 
     // Headline news message
-    @FindBy(xpath = "//*[@id=\"brexit\"]/div/div/div/ul/li[1]/div/div/a")
+    @FindBy(xpath = "//h1")
     private WebElement headLineMessage;
 
     @FindBy(css = "#tsf > div:nth-child(2) > div > div.RNNXgb > div > div.a4bIc > input")
@@ -53,22 +53,27 @@ public class verifyNewsPage {
 
     }
 
-    public void getHeadline() {
-        newsHeadline.getText();
-        System.out.println("Headline Title = " + newsHeadline.getText());
+//    public void getHeadline() {
+    public String getHeadline(){
+        String headline=newsHeadline.getText();
+        return headline;
     }
 
-    public void headLineBody() {
-        headLineMessage.getText();
-        System.out.println("Headline Title = " + headLineMessage.getText());
+    public String headLineBody() {
+        String messageText=headLineMessage.getText();
+       return  messageText;
     }
 
-    public void enterGoogleText(String mySearchWord) {
-        searchField.sendKeys(mySearchWord);
+//    public void enterGoogleText(String mySearchWord) {
+//        searchField.sendKeys(mySearchWord);
+//        clickSearchBtn.click();
+//
+//    }
+
+    public void clickGoogleSearchBtn() {
         clickSearchBtn.click();
 
     }
-
 }
 
 

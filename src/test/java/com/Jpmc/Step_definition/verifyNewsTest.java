@@ -57,7 +57,7 @@ public class verifyNewsTest extends DriverInstance{
 
     @When("^I am searching for news from the menu$")
     public void i_am_searching_for_news_from_the_menu() throws Throwable {
-        verifyNP.enterGoogleText("pls search for my fake news");
+        //verifyNP.enterGoogleText("pls search for my fake news");
     }
 
     @Then("^I should see a list of other sources with similar information$")

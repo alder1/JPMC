@@ -5,65 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="560870f4-313c-4eba-8410-9fda716315f7" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/Jpmc/Step_definition/verifyNewsTest.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ target/test-report/report-html/formatter.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ target/test-report/report-html/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ target/test-report/report-html/jquery-1.8.2.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ target/test-report/report-html/report.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ target/test-report/report-html/style.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ target/test-report/report-xml.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ target/test-report/report/report-json.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/MUYI CV.doc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/Java_Test_Practice/Switch_case.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/Java_Test_Practice/arrays.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/Java_Test_Practice/arrays2.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/Java_Test_Practice/branching.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/Java_Test_Practice/branching_2.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/Java_Test_Practice/control_flow_statement1.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/Java_Test_Practice/else_statements.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/Java_Test_Practice/grouping_cases.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/Java_Test_Practice/if_else_if_else.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/CucumberPrac/CurrentDate.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/CucumberPrac/DriverInstance.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/CucumberPrac/FileWriter.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/CucumberPrac/createANotePage.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/CucumberPrac/loginPage.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/com/CucumberPrac/Step_definition/loginTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/resources/CaseWord" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/resources/global.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Java_Test_Practice/Switch_case.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Java_Test_Practice/arrays.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Java_Test_Practice/arrays2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Java_Test_Practice/branching.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Java_Test_Practice/branching_2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Java_Test_Practice/control_flow_statement1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Java_Test_Practice/else_statements.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Java_Test_Practice/grouping_cases.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Java_Test_Practice/if_else_if_else.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/CucumberPrac/CurrentDate.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/CucumberPrac/DriverInstance.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/CucumberPrac/FileWriter.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/CucumberPrac/createANotePage.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/CucumberPrac/loginPage.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.CucumberPrac.TestRunner.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/com.CucumberPrac.TestRunner.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/CaseWord" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/Features/login.feature" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/com/CucumberPrac/Hooks.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/com/CucumberPrac/Step_definition/loginTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/com/CucumberPrac/TestRunner.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/global.properties" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/com/CucumberPrac/Hooks.java" afterPath="$PROJECT_DIR$/src/test/java/com/Jpmc/Hooks.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/com/CucumberPrac/TestRunner.java" afterPath="$PROJECT_DIR$/src/test/java/com/Jpmc/TestRunner.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/resources/Features/login.feature" afterPath="$PROJECT_DIR$/src/test/resources/Features/verifyNews.feature" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Drivers/chromedriver.exe" afterPath="$PROJECT_DIR$/src/Drivers/chromedriver.exe" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/resources/config.properties" afterPath="$PROJECT_DIR$/src/test/resources/config.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/config.properties" afterPath="$PROJECT_DIR$/target/test-classes/config.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/Jpmc/verifyNewsPage.java" afterPath="$PROJECT_DIR$/src/main/java/com/Jpmc/verifyNewsPage.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/Jpmc/Step_definition/verifyNewsTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/Jpmc/Step_definition/verifyNewsTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -102,11 +45,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="verifyNewsPage.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="verifyNewsPage.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/Jpmc/verifyNewsPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="299">
-              <caret line="67" column="31" lean-forward="false" selection-start-line="67" selection-start-column="31" selection-end-line="67" selection-end-column="31" />
+            <state relative-caret-position="119">
+              <caret line="55" column="33" lean-forward="true" selection-start-line="55" selection-start-column="33" selection-end-line="55" selection-end-column="33" />
               <folding />
             </state>
           </provider>
@@ -115,7 +58,7 @@
       <file leaf-file-name="DriverInstance.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/Jpmc/DriverInstance.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="294">
+            <state relative-caret-position="442">
               <caret line="32" column="23" lean-forward="false" selection-start-line="32" selection-start-column="9" selection-end-line="32" selection-end-column="46" />
               <folding />
             </state>
@@ -127,9 +70,7 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="306">
               <caret line="19" column="5" lean-forward="false" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="false" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -137,11 +78,9 @@
       <file leaf-file-name="TestRunner.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/Jpmc/TestRunner.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
+            <state relative-caret-position="221">
               <caret line="18" column="13" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="false" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -156,11 +95,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="verifyNewsTest.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="verifyNewsTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/Jpmc/Step_definition/verifyNewsTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="78">
-              <caret line="59" column="8" lean-forward="false" selection-start-line="59" selection-start-column="8" selection-end-line="59" selection-end-column="8" />
+            <state relative-caret-position="0">
+              <caret line="12" column="51" lean-forward="true" selection-start-line="12" selection-start-column="51" selection-end-line="12" selection-end-column="51" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -221,8 +160,8 @@
         <option value="$PROJECT_DIR$/src/test/java/com/Jpmc/Step_definition/loginTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/Jpmc/DriverInstance.java" />
         <option value="$PROJECT_DIR$/src/test/resources/config.properties" />
-        <option value="$PROJECT_DIR$/src/test/java/com/Jpmc/Step_definition/verifyNewsTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/Jpmc/verifyNewsPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/Jpmc/Step_definition/verifyNewsTest.java" />
       </list>
     </option>
   </component>
@@ -254,9 +193,9 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1358" />
+    <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1040" />
+    <option name="width" value="1382" />
     <option name="height" value="744" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -1087,20 +1026,11 @@
       <workItem from="1567374362167" duration="2545000" />
       <workItem from="1567455756173" duration="608000" />
       <workItem from="1567502051878" duration="494000" />
-      <workItem from="1567502822071" duration="7244000" />
+      <workItem from="1567502822071" duration="9718000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Feature__verifyNews - 2019.09.03 at 17h 01m 39s.xml">
-      <configuration name="Feature: verifyNews" configurationId="CucumberJavaRunConfigurationType" />
-    </history-entry>
-    <history-entry file="Feature__verifyNews - 2019.09.03 at 17h 15m 50s.xml">
-      <configuration name="Feature: verifyNews" configurationId="CucumberJavaRunConfigurationType" />
-    </history-entry>
-    <history-entry file="Feature__verifyNews - 2019.09.03 at 17h 17m 06s.xml">
-      <configuration name="Feature: verifyNews" configurationId="CucumberJavaRunConfigurationType" />
-    </history-entry>
     <history-entry file="Feature__verifyNews - 2019.09.03 at 17h 19m 31s.xml">
       <configuration name="Feature: verifyNews" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
@@ -1122,9 +1052,18 @@
     <history-entry file="Feature__verifyNews - 2019.09.03 at 17h 36m 22s.xml">
       <configuration name="Feature: verifyNews" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
+    <history-entry file="Feature__verifyNews - 2019.09.03 at 17h 50m 52s.xml">
+      <configuration name="Feature: verifyNews" configurationId="CucumberJavaRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Feature__verifyNews - 2019.09.03 at 17h 53m 38s.xml">
+      <configuration name="Feature: verifyNews" configurationId="CucumberJavaRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Feature__verifyNews - 2019.09.03 at 18h 23m 32s.xml">
+      <configuration name="Feature: verifyNews" configurationId="CucumberJavaRunConfigurationType" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="82501000" />
+    <option name="totallyTimeSpent" value="84975000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1136,7 +1075,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1358" y="-8" width="1040" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1154,7 +1093,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2755102" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.204236" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1272,36 +1211,8 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/CucumberPrac/DriverInstance.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/CucumberPrac/FileWriter.java" />
     <entry file="file://$PROJECT_DIR$/src/test/resources/CaseWord" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/Jpmc/Hooks.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="19" column="5" lean-forward="false" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/Jpmc/TestRunner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="18" column="13" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/Jpmc/loginPage.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/Jpmc/CurrentDate.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/resources/Features/verifyNews.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="42" lean-forward="false" selection-start-line="16" selection-start-column="42" selection-end-line="16" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resources/global.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -1318,29 +1229,53 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/Features/verifyNews.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="42" lean-forward="false" selection-start-line="16" selection-start-column="42" selection-end-line="16" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/Jpmc/TestRunner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="18" column="13" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/Jpmc/Hooks.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="19" column="5" lean-forward="false" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/Jpmc/DriverInstance.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
+        <state relative-caret-position="442">
           <caret line="32" column="23" lean-forward="false" selection-start-line="32" selection-start-column="9" selection-end-line="32" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/Jpmc/verifyNewsPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="55" column="33" lean-forward="true" selection-start-line="55" selection-start-column="33" selection-end-line="55" selection-end-column="33" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/Jpmc/Step_definition/verifyNewsTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
-          <caret line="59" column="8" lean-forward="false" selection-start-line="59" selection-start-column="8" selection-end-line="59" selection-end-column="8" />
+        <state relative-caret-position="0">
+          <caret line="12" column="51" lean-forward="true" selection-start-line="12" selection-start-column="51" selection-end-line="12" selection-end-column="51" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/Jpmc/verifyNewsPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="67" column="31" lean-forward="false" selection-start-line="67" selection-start-column="31" selection-end-line="67" selection-end-column="31" />
-          <folding />
         </state>
       </provider>
     </entry>
