@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="126.345773">
+<testcase classname="As a user" name="Open guardian news article" time="119.541904">
+<system-out><![CDATA[Given I navigate to the guardian page.......................................passed
+When I select news from the menu............................................passed
+And I select the news making headlines......................................passed
+Then I could read the news article making headline..........................passed
+And I should be able to see the main information in the news................passed
+]]></system-out>
+</testcase>
+<testcase classname="As a user" name="Check the main information in the news using google resource" time="6.803869">
+<failure message="java.lang.RuntimeException: More than one line was found in NewsHeadline file&#13;&#10;&#9;at com.Jpmc.verifyNewsPage.retrieveHeadline(verifyNewsPage.java:125)&#13;&#10;&#9;at com.Jpmc.verifyNewsPage.enterGoogleText(verifyNewsPage.java:92)&#13;&#10;&#9;at com.Jpmc.Step_definition.verifyNewsTest.i_am_searching_for_news_from_the_menu(verifyNewsTest.java:69)&#13;&#10;&#9;at ✽.When I am searching for news from the menu(Features/verifyNews.feature:14)&#13;&#10;"><![CDATA[Given I navigate to the google..............................................passed
+When I am searching for news from the menu..................................failed
+Then I should see a list of other sources with similar information..........skipped
+And I could read the news article making headline from other source.........skipped
+And I could confirm that the news article is valid..........................skipped
+
+StackTrace:
+java.lang.RuntimeException: More than one line was found in NewsHeadline file
+	at com.Jpmc.verifyNewsPage.retrieveHeadline(verifyNewsPage.java:125)
+	at com.Jpmc.verifyNewsPage.enterGoogleText(verifyNewsPage.java:92)
+	at com.Jpmc.Step_definition.verifyNewsTest.i_am_searching_for_news_from_the_menu(verifyNewsTest.java:69)
+	at ✽.When I am searching for news from the menu(Features/verifyNews.feature:14)
+]]></failure>
+</testcase>
+</testsuite>

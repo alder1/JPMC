@@ -9,9 +9,7 @@ import java.util.ResourceBundle;
 import java.util.concurrent.TimeUnit;
 
 
-/**
- * Created by musti on 11/09/2017.
- */
+
 public class DriverInstance {
 
     public static WebDriver driver;

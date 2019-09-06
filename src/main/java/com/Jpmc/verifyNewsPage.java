@@ -2,12 +2,19 @@ package com.Jpmc;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
-/**
- * Created by musti on 22/06/2017.
- */
+import java.io.IOException;
+
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.util.Scanner;
+
+
 public class verifyNewsPage {
 
     WebDriver driver;
@@ -18,7 +25,7 @@ public class verifyNewsPage {
 
     }
 
-    // Web Elements for create a note + add title and delete note.
+    // Web Elements
 
     @FindBy(xpath = "//*[@id='top']/div[6]/div/div/div[2]/div[3]/button/span[2]")
     private WebElement closeCookie;
@@ -26,11 +33,12 @@ public class verifyNewsPage {
     @FindBy(linkText = "News")
     private WebElement newsButton;
 
-    @FindBy(xpath = "//*[@id='brexit']/div/header/div/a/h2")
+    @FindBy(xpath = "//a[@data-link-name='article']")
     private WebElement newsHeadline;
 
-    @FindBy(xpath = "html/body/div[2]/div[2]/div[2]/div[1]/div[2]/div[2]/div[1]")
-    private WebElement DoneBtn;
+    @FindBy(xpath = "div[@class='engagement-banner__close']")
+    private WebElement closeSupportTheGuardian;
+
 
     // Headline news message
     @FindBy(xpath = "//h1")
@@ -53,27 +61,74 @@ public class verifyNewsPage {
 
     }
 
-//    public void getHeadline() {
-    public String getHeadline(){
-        String headline=newsHeadline.getText();
+    public void clickHeadlineNews() {
+//        new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(newsHeadline));
+        WebDriverWait wait = new WebDriverWait(driver, 20);
+        wait.until(ExpectedConditions.elementToBeClickable(newsHeadline));
+        Actions ck = new Actions(driver);
+        ck.moveToElement(newsHeadline).click().perform();
+//        newsHeadline.click();
+    }
+
+    public void closeGuardianSupport() {
+        closeSupportTheGuardian.click();
+    }
+
+    public String getHeadline() {
+        String headline = headLineMessage.getText();
         return headline;
     }
 
-    public String headLineBody() {
-        String messageText=headLineMessage.getText();
-       return  messageText;
+//    public String getHeadlineTextFromFile() {
+//      String headline = headLineMessage.getText();    //will contain your File reader
+//        return headline;
+//    }
+
+    public WebElement getSearchField() {
+        return searchField;
     }
 
-//    public void enterGoogleText(String mySearchWord) {
-//        searchField.sendKeys(mySearchWord);
-//        clickSearchBtn.click();
-//
-//    }
+    public void enterGoogleText() {
+        getSearchField().sendKeys(retrieveHeadline());
+    }
 
     public void clickGoogleSearchBtn() {
         clickSearchBtn.click();
-
     }
+
+    public void saveTextToFile() {
+
+        // This code will call the FileWriter class and save the retrieved text from 'copyText.getText' method & save the text to file specified.
+        String textToSave = headLineMessage.getText();
+        FileWriter myFileWriter = new FileWriter("NewsHeadline");
+        myFileWriter.writeToFile(textToSave);
+        myFileWriter.endFile();
+    }
+        // This code will retrieve text from the file and pass into the google text field on the web app.
+
+        public String retrieveHeadline() {
+            Path path = Paths.get("src/test/resources/NewsHeadline");
+            Scanner scanner;
+            try {
+                scanner = new Scanner(path);
+            } catch (IOException e) {
+                throw new RuntimeException("Could not find text file");
+            }
+            String retrieveText = null;
+            int iterationCounter = 0;
+            while (scanner.hasNext()) {
+                iterationCounter++;
+                retrieveText = scanner.next();
+            }
+            scanner.close();
+            if (iterationCounter > 1) {
+                throw new RuntimeException("More than one line was found in NewsHeadline file");
+            } else if (retrieveText == null) {
+                throw new RuntimeException("Could not retrieve a Text");
+                //Email.sendKeys(retrieveText);
+            }
+            return retrieveText;
+        }
 }
 
 
