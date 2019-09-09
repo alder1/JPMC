@@ -34,7 +34,7 @@ public class FileWriter {
         try {
             fw = new java.io.FileWriter(Paths.get(fullPath).toFile(), true);
             fw.append(appendText);
-            fw.append(newLine);
+//            fw.append(newLine);
             fw.close();
         } catch (IOException e) {
             e.printStackTrace();

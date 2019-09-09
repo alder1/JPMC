@@ -7,7 +7,7 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 10815681286,
+  "duration": 17328936176,
   "status": "passed"
 });
 formatter.scenario({
@@ -47,43 +47,43 @@ formatter.match({
   "location": "verifyNewsTest.i_navigate_to_the_guardian_page()"
 });
 formatter.result({
-  "duration": 79488682234,
+  "duration": 81270803799,
   "status": "passed"
 });
 formatter.match({
   "location": "verifyNewsTest.i_select_news_from_the_menu()"
 });
 formatter.result({
-  "duration": 16135852372,
+  "duration": 25684631620,
   "status": "passed"
 });
 formatter.match({
   "location": "verifyNewsTest.i_select_the_news_making_headlines()"
 });
 formatter.result({
-  "duration": 12880373025,
+  "duration": 40416056399,
   "status": "passed"
 });
 formatter.match({
   "location": "verifyNewsTest.i_could_read_the_news_article_making_headline()"
 });
 formatter.result({
-  "duration": 147923258,
+  "duration": 403446439,
   "status": "passed"
 });
 formatter.match({
   "location": "verifyNewsTest.i_should_be_able_to_see_the_main_information_in_the_news()"
 });
 formatter.result({
-  "duration": 73198018,
+  "duration": 281408552,
   "status": "passed"
 });
 formatter.after({
-  "duration": 193992,
+  "duration": 79276,
   "status": "passed"
 });
 formatter.before({
-  "duration": 4622819920,
+  "duration": 14952011177,
   "status": "passed"
 });
 formatter.scenario({
@@ -123,37 +123,39 @@ formatter.match({
   "location": "verifyNewsTest.i_navigate_to_the_google()"
 });
 formatter.result({
-  "duration": 2151615638,
+  "duration": 5186716570,
   "status": "passed"
 });
 formatter.match({
   "location": "verifyNewsTest.i_am_searching_for_news_from_the_menu()"
 });
 formatter.result({
-  "duration": 29392152,
-  "error_message": "java.lang.RuntimeException: More than one line was found in NewsHeadline file\r\n\tat com.Jpmc.verifyNewsPage.retrieveHeadline(verifyNewsPage.java:125)\r\n\tat com.Jpmc.verifyNewsPage.enterGoogleText(verifyNewsPage.java:92)\r\n\tat com.Jpmc.Step_definition.verifyNewsTest.i_am_searching_for_news_from_the_menu(verifyNewsTest.java:69)\r\n\tat ✽.When I am searching for news from the menu(Features/verifyNews.feature:14)\r\n",
-  "status": "failed"
+  "duration": 18447094687,
+  "status": "passed"
 });
 formatter.match({
   "location": "verifyNewsTest.i_should_see_a_list_of_other_sources_with_similar_information()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 57358,
+  "status": "passed"
 });
 formatter.match({
   "location": "verifyNewsTest.i_could_read_the_news_article_making_headline_from_other_source()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 57824,
+  "status": "passed"
 });
 formatter.match({
   "location": "verifyNewsTest.i_could_confirm_that_the_news_article_is_valid()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 56892,
+  "status": "passed"
 });
 formatter.after({
-  "duration": 41037,
+  "duration": 34042,
   "status": "passed"
 });
 });

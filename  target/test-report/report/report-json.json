@@ -6,7 +6,7 @@
         "before": [
           {
             "result": {
-              "duration": 10815681286,
+              "duration": 17328936176,
               "status": "passed"
             },
             "match": {
@@ -21,7 +21,7 @@
         "after": [
           {
             "result": {
-              "duration": 193992,
+              "duration": 79276,
               "status": "passed"
             },
             "match": {
@@ -34,7 +34,7 @@
         "steps": [
           {
             "result": {
-              "duration": 79488682234,
+              "duration": 81270803799,
               "status": "passed"
             },
             "line": 6,
@@ -46,7 +46,7 @@
           },
           {
             "result": {
-              "duration": 16135852372,
+              "duration": 25684631620,
               "status": "passed"
             },
             "line": 7,
@@ -58,7 +58,7 @@
           },
           {
             "result": {
-              "duration": 12880373025,
+              "duration": 40416056399,
               "status": "passed"
             },
             "line": 8,
@@ -70,7 +70,7 @@
           },
           {
             "result": {
-              "duration": 147923258,
+              "duration": 403446439,
               "status": "passed"
             },
             "line": 9,
@@ -82,7 +82,7 @@
           },
           {
             "result": {
-              "duration": 73198018,
+              "duration": 281408552,
               "status": "passed"
             },
             "line": 10,
@@ -98,7 +98,7 @@
         "before": [
           {
             "result": {
-              "duration": 4622819920,
+              "duration": 14952011177,
               "status": "passed"
             },
             "match": {
@@ -113,7 +113,7 @@
         "after": [
           {
             "result": {
-              "duration": 41037,
+              "duration": 34042,
               "status": "passed"
             },
             "match": {
@@ -126,7 +126,7 @@
         "steps": [
           {
             "result": {
-              "duration": 2151615638,
+              "duration": 5186716570,
               "status": "passed"
             },
             "line": 13,
@@ -138,9 +138,8 @@
           },
           {
             "result": {
-              "duration": 29392152,
-              "error_message": "java.lang.RuntimeException: More than one line was found in NewsHeadline file\r\n\tat com.Jpmc.verifyNewsPage.retrieveHeadline(verifyNewsPage.java:125)\r\n\tat com.Jpmc.verifyNewsPage.enterGoogleText(verifyNewsPage.java:92)\r\n\tat com.Jpmc.Step_definition.verifyNewsTest.i_am_searching_for_news_from_the_menu(verifyNewsTest.java:69)\r\n\tat ✽.When I am searching for news from the menu(Features/verifyNews.feature:14)\r\n",
-              "status": "failed"
+              "duration": 18447094687,
+              "status": "passed"
             },
             "line": 14,
             "name": "I am searching for news from the menu",
@@ -151,7 +150,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 57358,
+              "status": "passed"
             },
             "line": 15,
             "name": "I should see a list of other sources with similar information",
@@ -162,7 +162,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 57824,
+              "status": "passed"
             },
             "line": 16,
             "name": "I could read the news article making headline from other source",
@@ -173,7 +174,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 56892,
+              "status": "passed"
             },
             "line": 17,
             "name": "I could confirm that the news article is valid",

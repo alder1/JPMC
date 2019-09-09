@@ -10,9 +10,12 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.io.IOException;
 
+import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.Scanner;
+
+import static java.nio.file.Files.*;
 
 
 public class verifyNewsPage {
@@ -47,7 +50,7 @@ public class verifyNewsPage {
     @FindBy(css = "#tsf > div:nth-child(2) > div > div.RNNXgb > div > div.a4bIc > input")
     private WebElement searchField;
 
-    @FindBy(css = "#tsf > div:nth-child(2) > div > div.FPdoLc.VlcLAe > center > input.gNO89b")
+    @FindBy(css = "#tsf > div:nth-child(2) > div > div.FPdoLc.VlcLAe > center > input.gNO89b")      //input[@type='submit']
     private WebElement clickSearchBtn;
 
 
@@ -62,11 +65,10 @@ public class verifyNewsPage {
     }
 
     public void clickHeadlineNews() {
-//        new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(newsHeadline));
         WebDriverWait wait = new WebDriverWait(driver, 20);
         wait.until(ExpectedConditions.elementToBeClickable(newsHeadline));
-        Actions ck = new Actions(driver);
-        ck.moveToElement(newsHeadline).click().perform();
+        Actions action = new Actions(driver);
+        action.moveToElement(newsHeadline).click().perform();
 //        newsHeadline.click();
     }
 
@@ -79,21 +81,20 @@ public class verifyNewsPage {
         return headline;
     }
 
-//    public String getHeadlineTextFromFile() {
-//      String headline = headLineMessage.getText();    //will contain your File reader
-//        return headline;
-//    }
-
     public WebElement getSearchField() {
         return searchField;
     }
 
     public void enterGoogleText() {
+
         getSearchField().sendKeys(retrieveHeadline());
     }
 
     public void clickGoogleSearchBtn() {
-        clickSearchBtn.click();
+        new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(clickSearchBtn));
+        Actions action = new Actions(driver);
+        action.moveToElement(clickSearchBtn).click().perform();
+        //clickSearchBtn.click();
     }
 
     public void saveTextToFile() {
@@ -107,26 +108,67 @@ public class verifyNewsPage {
         // This code will retrieve text from the file and pass into the google text field on the web app.
 
         public String retrieveHeadline() {
-            Path path = Paths.get("src/test/resources/NewsHeadline");
-            Scanner scanner;
+
             try {
-                scanner = new Scanner(path);
+                new Scanner(Paths.get("src/test/resources/NewsHeadline"));
             } catch (IOException e) {
                 throw new RuntimeException("Could not find text file");
             }
-            String retrieveText = null;
-            int iterationCounter = 0;
-            while (scanner.hasNext()) {
-                iterationCounter++;
-                retrieveText = scanner.next();
-            }
-            scanner.close();
-            if (iterationCounter > 1) {
-                throw new RuntimeException("More than one line was found in NewsHeadline file");
-            } else if (retrieveText == null) {
+            String retrieveText;
+            try {
+                retrieveText = new String(readAllBytes(Paths.get("src/test/resources/NewsHeadline")));
+            } catch (IOException e) {
                 throw new RuntimeException("Could not retrieve a Text");
-                //Email.sendKeys(retrieveText);
             }
+//            Path path = Paths.get("src/test/resources/NewsHeadline");
+//            Scanner scanner;
+//            try {
+//                scanner = new Scanner(path);
+//            } catch (IOException e) {
+//                throw new RuntimeException("Could not find text file");
+//            }
+//            String retrieveText = null;
+//            int iterationCounter = 0;
+//            while (scanner.hasNext()) {
+//                iterationCounter++;
+//                retrieveText = scanner.next();
+//            }
+//            scanner.close();
+//            if (iterationCounter > 1) {
+//                throw new RuntimeException("More than one line was found in NewsHeadline file");
+//            } else if (retrieveText == null) {
+//                throw new RuntimeException("Could not retrieve a Text");
+//                //Email.sendKeys(retrieveText);
+//            }
+//            Path path = Paths.get("src/test/resources/NewsHeadline");
+//            Scanner scanner = null;
+//            String retrieveText = null;
+//            try {
+//
+//               scanner = new Scanner(path);
+//
+//             scanner = new Scanner(System.in);
+////            String retrieveText = null;
+////            int iterationCounter = 0;
+////            while (scanner.hasNext()) {
+////                iterationCounter++;
+//                 retrieveText = scanner.nextLine();
+////            }
+//            } catch (IOException e) {
+//                throw new RuntimeException("Could not find text file");
+//
+//        } finally {
+//        if (scanner != null) {
+//            scanner.close();
+//        }
+//    }
+////            if (iterationCounter > 1) {
+////                throw new RuntimeException("More than one line was found in NewsHeadline file");
+////            } else if (retrieveText == null) {
+////                throw new RuntimeException("Could not retrieve a Text");
+////                //Email.sendKeys(retrieveText);
+////            }
+
             return retrieveText;
         }
 }
