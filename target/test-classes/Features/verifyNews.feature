@@ -13,5 +13,4 @@ Feature: As a user
     Given I navigate to the google
     When I am searching for news from the menu
     Then I should see a list of other sources with similar information
-    And I could read the news article making headline from other source
     And I could confirm that the news article is valid

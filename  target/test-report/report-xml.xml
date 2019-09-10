@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="203.971391">
-<testcase classname="As a user" name="Open guardian news article" time="165.385362">
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="47.013015">
+<testcase classname="As a user" name="Open guardian news article" time="34.374422">
 <system-out><![CDATA[Given I navigate to the guardian page.......................................passed
 When I select news from the menu............................................passed
 And I select the news making headlines......................................passed
@@ -8,11 +8,10 @@ Then I could read the news article making headline..........................pass
 And I should be able to see the main information in the news................passed
 ]]></system-out>
 </testcase>
-<testcase classname="As a user" name="Check the main information in the news using google resource" time="38.586029">
+<testcase classname="As a user" name="Check the main information in the news using google resource" time="12.638593">
 <system-out><![CDATA[Given I navigate to the google..............................................passed
 When I am searching for news from the menu..................................passed
 Then I should see a list of other sources with similar information..........passed
-And I could read the news article making headline from other source.........passed
 And I could confirm that the news article is valid..........................passed
 ]]></system-out>
 </testcase>

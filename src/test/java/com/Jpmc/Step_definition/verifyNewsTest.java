@@ -3,6 +3,7 @@ package com.Jpmc.Step_definition;
 import com.Jpmc.DriverInstance;
 import com.Jpmc.verifyNewsPage;
 import cucumber.api.java.en.*;
+import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -56,6 +57,7 @@ public class verifyNewsTest extends DriverInstance {
     @Then("^I should be able to see the main information in the news$")
     public void i_should_be_able_to_see_the_main_information_in_the_news() throws Throwable {
         verifyNP.saveTextToFile();
+        driver.close();
     }
 
     @Given("^I navigate to the google$")
@@ -67,23 +69,18 @@ public class verifyNewsTest extends DriverInstance {
     @When("^I am searching for news from the menu$")
     public void i_am_searching_for_news_from_the_menu() throws Throwable {
         verifyNP.enterGoogleText();
-        verifyNP.clickGoogleSearchBtn();
 
     }
 
     @Then("^I should see a list of other sources with similar information$")
     public void i_should_see_a_list_of_other_sources_with_similar_information() throws Throwable {
-
-    }
-
-    @Then("^I could read the news article making headline from other source$")
-    public void i_could_read_the_news_article_making_headline_from_other_source() throws Throwable {
-
+        verifyNP.clickGoogleSearchBtn();
     }
 
     @Then("^I could confirm that the news article is valid$")
     public void i_could_confirm_that_the_news_article_is_valid() throws Throwable {
-
+        verifyNP.countResult();
+        driver.close();
     }
 
 
