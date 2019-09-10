@@ -19,20 +19,6 @@ public class verifyNewsTest extends DriverInstance {
     public void i_navigate_to_the_guardian_page() throws Throwable {
         driver.get(config.getString("URL"));
 
-
-//        WebDriverWait wait = new WebDriverWait(driver, 10);
-//        driver.findElement(By.xpath("//a[@data-link-name='article']"));
-
-//        new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.xpath("//a[@data-link-name='article']")));
-//        WebDriverWait wait = new WebDriverWait(driver,20);
-
-
-        //Thread.sleep(5000);
-
-
-        // verifyNP.headLineBody();
-
-
     }
 
     @When("^I select news from the menu$")
@@ -79,7 +65,7 @@ public class verifyNewsTest extends DriverInstance {
 
     @Then("^I could confirm that the news article is valid$")
     public void i_could_confirm_that_the_news_article_is_valid() throws Throwable {
-        verifyNP.countResult();
+        Assert.assertTrue(verifyNP.countResult());
         driver.close();
     }
 

@@ -5,7 +5,9 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.FindAll;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.FindBys;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -15,6 +17,7 @@ import java.io.IOException;
 
 import java.nio.file.Paths;
 
+import java.util.List;
 import java.util.Scanner;
 
 import static java.nio.file.Files.*;
@@ -55,8 +58,9 @@ public class verifyNewsPage {
     @FindBy(css = "#tsf > div:nth-child(2) > div > div.FPdoLc.VlcLAe > center > input.gNO89b")
     private WebElement clickSearchBtn;
 
-    @FindBy(xpath = "//h3")   //id = "resultStats"
-    private WebElement searchResult;
+    // To get the list of all the headers with the headlines
+    @FindAll(@FindBy(xpath = "//h3"))   //id = "resultStats"
+    private List <WebElement> searchResult;
 
 
     public void clickCookie() {
@@ -127,17 +131,20 @@ public class verifyNewsPage {
         return retrieveText;
     }
 
-    public void countResult() {
+    public boolean countResult() {
 
-        int result = driver.findElements(By.xpath("//h3")).size();
+        int result = searchResult.size();
         System.out.println("Total search result displayed on google search is " + result);
 
         if (result >=5){
             System.out.println("*****This is an ORIGINAL news*****");
+
+            return true;
         }else{
             System.out.println("*****This is an FAKE news*****");
 
         }
+        return false;
 
     }
 }
