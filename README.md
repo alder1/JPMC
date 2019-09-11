@@ -1,4 +1,4 @@
-# JPMCTest
+# JPMC UI Automation Test
 ## Please go through the below to understand the framework and how to setup and run the test.
 ### Feature/Test 
 ```
