@@ -60,7 +60,7 @@ public class verifyNewsPage {
 
     // To get the list of all the headers with the headlines
     @FindAll(@FindBy(xpath = "//h3"))   //id = "resultStats"
-    private List <WebElement> searchResult;
+    private List <WebElement> result;
 
 
     public void clickCookie() {
@@ -131,20 +131,9 @@ public class verifyNewsPage {
         return retrieveText;
     }
 
-    public boolean countResult() {
+    public boolean isResultCountAtLeast(int count) {
 
-    int result = searchResult.size();
-    System.out.println("Total search result displayed on google search is " + result);
-
-    if (result >=5){
-        System.out.println("*****This is an ORIGINAL news*****");
-
-        return true;
-    }else{
-        System.out.println("*****This is an FAKE news*****");
+        return result.size() >= count ? true : false;
 
     }
-    return false;
-
-}
 }

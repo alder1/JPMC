@@ -65,7 +65,8 @@ public class verifyNewsTest extends DriverInstance {
 
     @Then("^I am able to confirm that the news article Fake or not$")
     public void i_am_able_to_confirm_that_the_news_article_Fake_or_not() throws Throwable {
-        Assert.assertTrue(verifyNP.countResult());
+        Assert.assertTrue(verifyNP.isResultCountAtLeast(5));
+        System.out.println(verifyNP.isResultCountAtLeast(5));
         driver.close();
     }
 
