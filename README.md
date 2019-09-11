@@ -8,10 +8,15 @@ As a user, I want to validate news article from guardian news website on similar
 ```
 Selenium webDriver
 Java - programming language
-Chrome webdriver
+Chrome webdriver browser
 POM
 Cucumber
 Java 1.8
 Maven - build management tool
 IDE - IntelliJ
 ```
+### To run the test:
+``
+Go to TestRunner and right click on it,
+Then select Run 'TestRunner'
+``

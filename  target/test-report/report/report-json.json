@@ -6,7 +6,7 @@
         "before": [
           {
             "result": {
-              "duration": 11423443492,
+              "duration": 8115222047,
               "status": "passed"
             },
             "match": {
@@ -15,13 +15,13 @@
           }
         ],
         "line": 4,
-        "name": "Launch guardian news website",
+        "name": "Launch guardian news websi",
         "description": "",
-        "id": "as-a-user,-i-want-to-validate-news-article-from-guardian-news-website;launch-guardian-news-website",
+        "id": "as-a-user,-i-want-to-validate-news-article-from-guardian-news-website;launch-guardian-news-websi",
         "after": [
           {
             "result": {
-              "duration": 51763,
+              "duration": 51296,
               "status": "passed"
             },
             "match": {
@@ -34,7 +34,7 @@
         "steps": [
           {
             "result": {
-              "duration": 6975259930,
+              "duration": 13497569501,
               "status": "passed"
             },
             "line": 5,
@@ -46,7 +46,7 @@
           },
           {
             "result": {
-              "duration": 17000310575,
+              "duration": 13138061832,
               "status": "passed"
             },
             "line": 6,
@@ -58,7 +58,7 @@
           },
           {
             "result": {
-              "duration": 9905265583,
+              "duration": 5734330932,
               "status": "passed"
             },
             "line": 7,
@@ -70,7 +70,7 @@
           },
           {
             "result": {
-              "duration": 95013281,
+              "duration": 358055527,
               "status": "passed"
             },
             "line": 8,
@@ -82,7 +82,7 @@
           },
           {
             "result": {
-              "duration": 404437851,
+              "duration": 7493868727,
               "status": "passed"
             },
             "line": 9,
@@ -98,7 +98,7 @@
         "before": [
           {
             "result": {
-              "duration": 4226754044,
+              "duration": 4819756521,
               "status": "passed"
             },
             "match": {
@@ -113,7 +113,7 @@
         "after": [
           {
             "result": {
-              "duration": 41970,
+              "duration": 41503,
               "status": "passed"
             },
             "match": {
@@ -126,7 +126,7 @@
         "steps": [
           {
             "result": {
-              "duration": 2150967909,
+              "duration": 1452710202,
               "status": "passed"
             },
             "line": 12,
@@ -138,7 +138,7 @@
           },
           {
             "result": {
-              "duration": 2523592904,
+              "duration": 2593779379,
               "status": "passed"
             },
             "line": 13,
@@ -150,7 +150,7 @@
           },
           {
             "result": {
-              "duration": 6744737028,
+              "duration": 1862719733,
               "status": "passed"
             },
             "line": 14,
@@ -162,7 +162,7 @@
           },
           {
             "result": {
-              "duration": 440766624,
+              "duration": 2271340076,
               "status": "passed"
             },
             "line": 15,
