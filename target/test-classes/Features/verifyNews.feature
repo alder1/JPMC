@@ -1,16 +1,15 @@
-Feature: As a user
-  I want to search a news article for similar information
-  so that I can confirm that the news article is valid
+Feature: As a user, I want to validate news article from guardian news website
+  on similar resources, so that I can confirm that the news article is not FAKE news
 
-  Scenario: Open guardian news article
-    Given I navigate to the guardian page
-    When I select news from the menu
-    And I select the news making headlines
-    Then I could read the news article making headline
-    And I should be able to see the main information in the news
+  Scenario: Launch guardian news website
+    Given I navigate to the guardian news website
+    When I click on the news link from the menu
+    And I select the headlines news
+    Then I should be able to see the news page of that headline
+    And I should be able to copy and save to file the headline of the news
 
-  Scenario: Check the main information in the news using google resource
-    Given I navigate to the google
-    When I am searching for news from the menu
-    Then I should see a list of other sources with similar information
-    And I could confirm that the news article is valid
+  Scenario: To validate the headline news retrieved from guardian news with other resources on google
+    Given I navigate to google website
+    When I search for the headline news from the guardian site
+    Then I should see a list of other sources with similar news details
+    And I am able to confirm that the news article Fake or not

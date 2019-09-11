@@ -133,18 +133,18 @@ public class verifyNewsPage {
 
     public boolean countResult() {
 
-        int result = searchResult.size();
-        System.out.println("Total search result displayed on google search is " + result);
+    int result = searchResult.size();
+    System.out.println("Total search result displayed on google search is " + result);
 
-        if (result >=5){
-            System.out.println("*****This is an ORIGINAL news*****");
+    if (result >=5){
+        System.out.println("*****This is an ORIGINAL news*****");
 
-            return true;
-        }else{
-            System.out.println("*****This is an FAKE news*****");
-
-        }
-        return false;
+        return true;
+    }else{
+        System.out.println("*****This is an FAKE news*****");
 
     }
+    return false;
+
+}
 }
