@@ -13,4 +13,5 @@ POM
 Cucumber
 Java 1.8
 Maven - build management tool
+IDE - IntelliJ
 ```
