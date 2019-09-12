@@ -7,14 +7,14 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 8115222047,
+  "duration": 9130839818,
   "status": "passed"
 });
 formatter.scenario({
   "line": 4,
-  "name": "Launch guardian news websi",
+  "name": "Launch guardian news websiite",
   "description": "",
-  "id": "as-a-user,-i-want-to-validate-news-article-from-guardian-news-website;launch-guardian-news-websi",
+  "id": "as-a-user,-i-want-to-validate-news-article-from-guardian-news-website;launch-guardian-news-websiite",
   "type": "scenario",
   "keyword": "Scenario"
 });
@@ -47,43 +47,43 @@ formatter.match({
   "location": "verifyNewsTest.i_navigate_to_the_guardian_news_website()"
 });
 formatter.result({
-  "duration": 13497569501,
+  "duration": 20723610531,
   "status": "passed"
 });
 formatter.match({
   "location": "verifyNewsTest.i_click_on_the_news_link_from_the_menu()"
 });
 formatter.result({
-  "duration": 13138061832,
+  "duration": 15267666348,
   "status": "passed"
 });
 formatter.match({
   "location": "verifyNewsTest.i_select_the_headlines_news()"
 });
 formatter.result({
-  "duration": 5734330932,
+  "duration": 18311543096,
   "status": "passed"
 });
 formatter.match({
   "location": "verifyNewsTest.i_should_be_able_to_see_the_news_page_of_that_headline()"
 });
 formatter.result({
-  "duration": 358055527,
+  "duration": 148123312,
   "status": "passed"
 });
 formatter.match({
   "location": "verifyNewsTest.i_should_be_able_to_copy_and_save_to_file_the_headline_of_the_news()"
 });
 formatter.result({
-  "duration": 7493868727,
+  "duration": 931879355,
   "status": "passed"
 });
 formatter.after({
-  "duration": 51296,
+  "duration": 42902,
   "status": "passed"
 });
 formatter.before({
-  "duration": 4819756521,
+  "duration": 5158699151,
   "status": "passed"
 });
 formatter.scenario({
@@ -118,32 +118,32 @@ formatter.match({
   "location": "verifyNewsTest.i_navigate_to_google_website()"
 });
 formatter.result({
-  "duration": 1452710202,
+  "duration": 1615081215,
   "status": "passed"
 });
 formatter.match({
   "location": "verifyNewsTest.i_search_for_the_headline_news_from_the_guardian_site()"
 });
 formatter.result({
-  "duration": 2593779379,
+  "duration": 2904061525,
   "status": "passed"
 });
 formatter.match({
   "location": "verifyNewsTest.i_should_see_a_list_of_other_sources_with_similar_news_details()"
 });
 formatter.result({
-  "duration": 1862719733,
+  "duration": 2514569002,
   "status": "passed"
 });
 formatter.match({
   "location": "verifyNewsTest.i_am_able_to_confirm_that_the_news_article_Fake_or_not()"
 });
 formatter.result({
-  "duration": 2271340076,
+  "duration": 2493215868,
   "status": "passed"
 });
 formatter.after({
-  "duration": 41503,
+  "duration": 42435,
   "status": "passed"
 });
 });

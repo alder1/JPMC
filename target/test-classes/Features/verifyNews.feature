@@ -1,7 +1,7 @@
 Feature: As a user, I want to validate news article from guardian news website
   on similar resources, so that I can confirm that the news article is not FAKE news
 
-  Scenario: Launch guardian news websi
+  Scenario: Launch guardian news websiite
     Given I navigate to the guardian news website
     When I click on the news link from the menu
     And I select the headlines news
