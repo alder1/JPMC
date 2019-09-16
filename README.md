@@ -13,18 +13,17 @@ Framework setup
 * Java - programming language
 * Chrome webdriver browser
 * POM
-Cucumber
+* Cucumber
 * Java 1.8
 * Maven - build management tool
-* IDE - IntelliJ
+* IDE - IntelliJ IDEA
 ````
 ### To run the test:
 ````
-1. Download, install and setup Java SDK (Java 1.8) on your PC
-2. Install IntelliJ IDea on you PC, go to File - Project Structure - Project point it to the Java 8 SDK
-3. Clone the test framework to a location of your choice on your PC
-4. Launch IntelliJ, go to File - select Open and point to the cloned test framework - This will load up the project
-5. In the project, go to 'src\test\resources\settings.jar' - copy and paste the settings.jar file to a location on your PC
-6. On IntelliJ, go to File and select import settings - go to the location you saved the settings.jar file and import it. This will import my test framework settins automatically into project on your PC for easy setup and execution.
-7. Go to 'src\test\java\com\Jpmc\TestRunner.javaTestRunner' and right click on it - this will start execute the test.
+1. Download, install and setup Java SDK (Java 1.8) on your PC.
+2. Install IntelliJ IDEA on you PC, go to File - Project Structure - Project point it to the Java 8 SDK.
+3. Clone the test framework to a location of your choice on your PC.
+4. Launch IntelliJ, go to File - select Open and point to the cloned test framework - This will load up the project.
+5. Go to 'src\test\java\com\Jpmc\TestRunner.javaTestRunner' and right click on it - this will start to execute the test.
+6. You may also wish to run the test from Terminal with 'mvn test' command - provided you have maven installed and correctly setup on your pc within the environment variables.
 ````

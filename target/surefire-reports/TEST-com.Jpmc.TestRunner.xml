@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.Jpmc.TestRunner" time="67.056" tests="11" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.Jpmc.TestRunner" time="58.877" tests="11" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_181\jre\bin"/>
@@ -64,12 +64,12 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="Given I navigate to the guardian news website" classname="Scenario: Launch guardian news website" time="0.008"/>
-  <testcase name="When I click on the news link from the menu" classname="Scenario: Launch guardian news website" time="0"/>
-  <testcase name="And I select the headlines news" classname="Scenario: Launch guardian news website" time="0"/>
-  <testcase name="Then I should be able to see the news page of that headline" classname="Scenario: Launch guardian news website" time="0"/>
-  <testcase name="And I should be able to copy and save to file the headline of the news" classname="Scenario: Launch guardian news website" time="0"/>
-  <testcase name="Scenario: Launch guardian news website" classname="Scenario: Launch guardian news website" time="0.004"/>
+  <testcase name="Given I navigate to the guardian news website" classname="Scenario: Launch guardian news websiite" time="0.012"/>
+  <testcase name="When I click on the news link from the menu" classname="Scenario: Launch guardian news websiite" time="0"/>
+  <testcase name="And I select the headlines news" classname="Scenario: Launch guardian news websiite" time="0"/>
+  <testcase name="Then I should be able to see the news page of that headline" classname="Scenario: Launch guardian news websiite" time="0"/>
+  <testcase name="And I should be able to copy and save to file the headline of the news" classname="Scenario: Launch guardian news websiite" time="0"/>
+  <testcase name="Scenario: Launch guardian news websiite" classname="Scenario: Launch guardian news websiite" time="0.004"/>
   <testcase name="Given I navigate to google website" classname="Scenario: To validate the headline news retrieved from guardian news with other resources on google" time="0"/>
   <testcase name="When I search for the headline news from the guardian site" classname="Scenario: To validate the headline news retrieved from guardian news with other resources on google" time="0"/>
   <testcase name="Then I should see a list of other sources with similar news details" classname="Scenario: To validate the headline news retrieved from guardian news with other resources on google" time="0"/>

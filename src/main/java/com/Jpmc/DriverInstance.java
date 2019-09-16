@@ -21,7 +21,7 @@ public class DriverInstance {
             System.setProperty("webdriver.gecko.driver", "src\\Drivers\\geckodriver.exe");
             driver = new FirefoxDriver();
         } else if (config.getString("browser").equalsIgnoreCase("Chrome")) {
-            System.setProperty("webdriver.chrome.driver", "src\\Drivers\\chromedriver.exe");
+            System.setProperty("webdriver.chrome.driver", "src\\Drivers\\chromedriver_76.0.exe");
             driver = new ChromeDriver();
         } else {
             System.setProperty("webdriver.ie.driver", "src\\Drivers\\IEDriverServer.exe");
