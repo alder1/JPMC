@@ -7,7 +7,7 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 6413543827,
+  "duration": 8300189889,
   "status": "passed"
 });
 formatter.scenario({
@@ -47,43 +47,43 @@ formatter.match({
   "location": "verifyNewsTest.i_navigate_to_the_guardian_news_website()"
 });
 formatter.result({
-  "duration": 15455340755,
+  "duration": 20763949252,
   "status": "passed"
 });
 formatter.match({
   "location": "verifyNewsTest.i_click_on_the_news_link_from_the_menu()"
 });
 formatter.result({
-  "duration": 7641805974,
+  "duration": 9072564278,
   "status": "passed"
 });
 formatter.match({
   "location": "verifyNewsTest.i_select_the_headlines_news()"
 });
 formatter.result({
-  "duration": 14208896035,
+  "duration": 19172294461,
   "status": "passed"
 });
 formatter.match({
   "location": "verifyNewsTest.i_should_be_able_to_see_the_news_page_of_that_headline()"
 });
 formatter.result({
-  "duration": 186199879,
+  "duration": 105974774,
   "status": "passed"
 });
 formatter.match({
   "location": "verifyNewsTest.i_should_be_able_to_copy_and_save_to_file_the_headline_of_the_news()"
 });
 formatter.result({
-  "duration": 606698980,
+  "duration": 984508603,
   "status": "passed"
 });
 formatter.after({
-  "duration": 55027,
+  "duration": 48964,
   "status": "passed"
 });
 formatter.before({
-  "duration": 4340894211,
+  "duration": 6525691843,
   "status": "passed"
 });
 formatter.scenario({
@@ -118,32 +118,32 @@ formatter.match({
   "location": "verifyNewsTest.i_navigate_to_google_website()"
 });
 formatter.result({
-  "duration": 1520624264,
+  "duration": 1816422746,
   "status": "passed"
 });
 formatter.match({
   "location": "verifyNewsTest.i_search_for_the_headline_news_from_the_guardian_site()"
 });
 formatter.result({
-  "duration": 2560627229,
+  "duration": 3718009472,
   "status": "passed"
 });
 formatter.match({
   "location": "verifyNewsTest.i_should_see_a_list_of_other_sources_with_similar_news_details()"
 });
 formatter.result({
-  "duration": 2054704405,
+  "duration": 2143140137,
   "status": "passed"
 });
 formatter.match({
   "location": "verifyNewsTest.i_am_able_to_confirm_that_the_news_article_Fake_or_not()"
 });
 formatter.result({
-  "duration": 2205622883,
+  "duration": 2605988297,
   "status": "passed"
 });
 formatter.after({
-  "duration": 50363,
+  "duration": 45234,
   "status": "passed"
 });
 });

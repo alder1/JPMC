@@ -4,9 +4,6 @@ import com.Jpmc.DriverInstance;
 import com.Jpmc.verifyNewsPage;
 import cucumber.api.java.en.*;
 import org.junit.Assert;
-import org.openqa.selenium.By;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.ResourceBundle;
 
