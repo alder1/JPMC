@@ -1,12 +1,13 @@
 package com.Jpmc;
 
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindAll;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.FluentWait;
+import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.io.IOException;
@@ -16,6 +17,7 @@ import java.nio.file.Paths;
 
 import java.util.List;
 import java.util.Scanner;
+import java.util.concurrent.TimeUnit;
 
 import static java.nio.file.Files.*;
 
@@ -59,7 +61,17 @@ public class verifyNewsPage {
     @FindAll(@FindBy(xpath = "//h3"))   //id = "resultStats"
     private List <WebElement> result;
 
-
+    public void waitUntilElementIsClickable(WebElement element) {
+        Wait<WebDriver> wait = new FluentWait<WebDriver>(driver)
+                .withTimeout(10, TimeUnit.SECONDS)
+                .pollingEvery(1, TimeUnit.SECONDS)
+                .ignoring(StaleElementReferenceException.class, NoSuchElementException.class);
+        try {
+            wait.until(ExpectedConditions.elementToBeClickable((element)));
+        } catch (org.openqa.selenium.TimeoutException e) {
+            System.out.println("Expected element not available: " + element);
+        }
+    }
     public void clickCookie() {
         closeCookie.click();
 
@@ -96,9 +108,11 @@ public class verifyNewsPage {
     }
 
     public void clickGoogleSearchBtn() {
-        new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(clickSearchBtn));
-        Actions action = new Actions(driver);
-        action.moveToElement(clickSearchBtn).click().perform();
+        waitUntilElementIsClickable(clickSearchBtn);
+//        new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(clickSearchBtn));
+//        Actions action = new Actions(driver);
+//        action.moveToElement(clickSearchBtn).click().perform();
+        ((JavascriptExecutor) driver).executeScript("arguments[0].click();", clickSearchBtn);
     }
 
     public void saveTextToFile() {

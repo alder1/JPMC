@@ -7,10 +7,12 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="Cucumber_Practice" />
+        <module name="jpmc" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="Cucumber_Practice" target="1.8" />
+      <module name="jpmc" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
