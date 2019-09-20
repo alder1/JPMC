@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="75.208828">
-<testcase classname="As a user, I want to validate news article from guardian news website" name="Launch guardian news websiite" time="58.39953">
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="63.479219">
+<testcase classname="As a user, I want to validate news article from guardian news website" name="Launch guardian news websiite" time="48.512045">
 <system-out><![CDATA[Given I navigate to the guardian news website...............................passed
 When I click on the news link from the menu.................................passed
 And I select the headlines news.............................................passed
@@ -8,7 +8,7 @@ Then I should be able to see the news page of that headline.................pass
 And I should be able to copy and save to file the headline of the news......passed
 ]]></system-out>
 </testcase>
-<testcase classname="As a user, I want to validate news article from guardian news website" name="To validate the headline news retrieved from guardian news with other resources on google" time="16.809298">
+<testcase classname="As a user, I want to validate news article from guardian news website" name="To validate the headline news retrieved from guardian news with other resources on google" time="14.967174">
 <system-out><![CDATA[Given I navigate to google website..........................................passed
 When I search for the headline news from the guardian site..................passed
 Then I should see a list of other sources with similar news details.........passed
