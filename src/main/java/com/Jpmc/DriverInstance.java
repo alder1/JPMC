@@ -12,23 +12,29 @@ import java.util.concurrent.TimeUnit;
 
 public class DriverInstance {
 
-    public static WebDriver driver;
+    public  static WebDriver driver;
 
     //This will open the browser
     public void openBrowser() {
         ResourceBundle config = ResourceBundle.getBundle("config");
-
-        config.getString("browser").equalsIgnoreCase("Chrome");
+        if (config.getString("browser").equalsIgnoreCase("Firefox")) {
+            System.setProperty("webdriver.gecko.driver", "src\\Drivers\\geckodriver.exe");
+            driver = new FirefoxDriver();
+        } else if (config.getString("browser").equalsIgnoreCase("Chrome")) {
             System.setProperty("webdriver.chrome.driver", "src/Drivers/chromedriver_76.0.exe");
             driver = new ChromeDriver();
-
+        } else {
+            System.setProperty("webdriver.ie.driver", "src\\Drivers\\IEDriverServer.exe");
+            driver = new InternetExplorerDriver();
+        }
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-//        driver.get(config.getString("URL"));
+        driver.get(config.getString("URL"));
         driver.manage().window().maximize();
     }
-            //This will close browser
-            public void closeBrowser(){
-            driver.quit();
-        }
+    //This will close browser
+    public void closeBrowser(){
+        driver.quit();
+    }
+
 
 }
